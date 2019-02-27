@@ -25,10 +25,8 @@ public class BasicUtilities {
     }
 
     public Boolean startsWith(String string, Character character) {
-        if (character.isLetter(string.charAt(0))){
-            return true;
-        }
 
-        return false;
+        return string.charAt(0) == character.toUpperCase(character) ||
+        string.charAt(0) == character.toLowerCase(character);
     }
 }
